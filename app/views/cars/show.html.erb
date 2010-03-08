@@ -1,0 +1,34 @@
+<% title "Car" %>
+
+<p>
+  <strong>Brand:</strong>
+  <%=h @car.brand %>
+</p>
+<p>
+  <strong>Name:</strong>
+  <%=h @car.name %>
+</p>
+
+<h3>Beauty:</h3>
+<p>
+  Global Avg: <%= ratings_for @car, :dimension => :beauty %>
+</p>
+Your rating: <%= ratings_for @car, :force_static => true, :dimension => :beauty, :small => true, :show_user_rating => true %>
+
+<h3>Speed:</h3>
+<p>
+  Global Avg: <%= ratings_for @car, :dimension => :speed %>
+</p>
+Your rating: <%= ratings_for @car, :force_static => true, :dimension => :speed, :small => true, :show_user_rating => true %>
+
+<h3>Price:</h3>
+<p>
+  Global Avg: <%= ratings_for @car, :dimension => :price %>
+</p>
+Your rating: <%= ratings_for @car, :force_static => true, :dimension => :price, :small => true, :show_user_rating => true %>
+
+<p>
+  <%= link_to "Edit", edit_car_path(@car) %> |
+  <%= link_to "Destroy", @car, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", cars_path %>
+</p>

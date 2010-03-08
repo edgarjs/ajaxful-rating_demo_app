@@ -1,0 +1,18 @@
+login: &login
+  adapter: mysql
+  encoding: utf8
+  pool: 5
+  username: root
+  password:
+
+development:
+  <<: *login
+  database: axr_demo_development
+
+test:
+  <<: *login
+  database: axr_demo_test
+
+production:
+  <<: *login
+  database: axr_demo

@@ -1,0 +1,8 @@
+log/*.log
+tmp/**/*
+tmp/*
+db/*.sqlite3
+.DS_Store
+*.pid
+*.lock
+*.tmproj
