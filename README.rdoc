@@ -5,11 +5,10 @@ This is a functional example for the plugin Ajaxful Rating:
 To run the app (each line is a single command):
 
   git clone git://github.com/edgarjs/ajaxful-rating_demo_app.git
-  sudo rake gems:install
+  rake gems:install
   rake db:migrate
   script/server
-  Sign up (create your own account)
   
 And that’s all. Point your browser to http://localhost:3000 and see it works.
 
-Feel free to contribute and add a nice style to this demo app ;)
+Don't forget to sign up to be able to rate.
