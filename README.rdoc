@@ -1,6 +1,12 @@
 This is a functional example for the plugin Ajaxful Rating:
 
-  http://github.com/edgarjs/ajaxful-rating
+http://github.com/edgarjs/ajaxful-rating
+
+=== Check the live demo:
+
+http://axr.heroku.com
+
+=== Clone it on your machine:
 
 To run the app (each line is a single command):
 

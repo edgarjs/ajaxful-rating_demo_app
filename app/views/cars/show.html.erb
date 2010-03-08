@@ -9,17 +9,17 @@
   <%=h @car.name %>
 </p>
 
-<h3>Beauty:</h3>
-<p>
-  Global Avg: <%= ratings_for @car, :dimension => :beauty %>
-</p>
-Your rating: <%= ratings_for @car, :force_static => true, :dimension => :beauty, :small => true, :show_user_rating => true %>
-
 <h3>Speed:</h3>
 <p>
   Global Avg: <%= ratings_for @car, :dimension => :speed %>
 </p>
 Your rating: <%= ratings_for @car, :force_static => true, :dimension => :speed, :small => true, :show_user_rating => true %>
+
+<h3>Beauty:</h3>
+<p>
+  Global Avg: <%= ratings_for @car, :dimension => :beauty %>
+</p>
+Your rating: <%= ratings_for @car, :force_static => true, :dimension => :beauty, :small => true, :show_user_rating => true %>
 
 <h3>Price:</h3>
 <p>
