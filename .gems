@@ -1,2 +1,2 @@
 authlogic
-ajaxful_rating
+ajaxful_rating -v '>= 2.2.1.1'
