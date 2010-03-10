@@ -1,0 +1,14 @@
+<% title "User" %>
+
+<p>
+  <strong>Username:</strong>
+  <%=h @user.username %>
+</p>
+<h3>Behavior Rating:</h3>
+<p>
+  Global Avg: <%= ratings_for @user, :dimension => :behavior %>
+</p>
+Your rating: <%= ratings_for @user, :force_static => true, :dimension => :behavior, :small => true, :show_user_rating => true %>
+<p>
+  <%= link_to "View All", users_path %>
+</p>

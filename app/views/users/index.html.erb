@@ -1,0 +1,16 @@
+<% title "Users" %>
+
+<table>
+  <tr>
+    <th>Username</th>
+    <th>Behavior</th>
+    <th></th>
+  </tr>
+  <% for user in @users %>
+    <tr>
+      <td><%=h user.username %></td>
+      <td><%= ratings_for user, :static, :small => true, :dimension => :behavior %></td>
+      <td><%= link_to "Show", user %></td>
+    </tr>
+  <% end %>
+</table>
