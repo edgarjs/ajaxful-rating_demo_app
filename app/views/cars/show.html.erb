@@ -27,6 +27,14 @@ Your rating: <%= ratings_for @car, :force_static => true, :dimension => :beauty,
 </p>
 Your rating: <%= ratings_for @car, :force_static => true, :dimension => :price, :small => true, :show_user_rating => true %>
 
+
+<h3>Raters (speed)</h3>
+
+<% for rater in @car.raters(:speed) %>
+  <%= rater.username %>:
+  <%= ratings_for @car, rater, :dimension => :speed, :show_user_rating => true %>
+<% end %>
+
 <p>
   <%= link_to "Edit", edit_car_path(@car) %> |
   <%= link_to "Destroy", @car, :confirm => 'Are you sure?', :method => :delete %> |
